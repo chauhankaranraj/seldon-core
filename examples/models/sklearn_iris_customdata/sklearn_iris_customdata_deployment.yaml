@@ -9,8 +9,8 @@ spec:
   - componentSpecs:
     - spec:
         containers:
-        - image: groszewn/sklearn-iris-customdata:0.1
-          imagePullPolicy: IfNotPresent
+        - image: chauhankaranraj/sklearn-iris-customdata:0.1
+          imagePullPolicy: Always
           name: sklearn-iris-classifier
     graph:
       children: []
