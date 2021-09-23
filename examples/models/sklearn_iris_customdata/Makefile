@@ -1,5 +1,6 @@
 IMAGE_NAME=chauhankaranraj/sklearn-iris-customdata
 IMAGE_VERSION=0.1
+SUBDIR=subdir
 
 build_image: train
 	s2i build  . seldonio/seldon-core-s2i-python38-ubi8:1.11.0 ${IMAGE_NAME}:${IMAGE_VERSION}
@@ -12,8 +13,8 @@ kind_load:
 
 .PHONY: train
 train:
-	python train_iris.py
+	python $(SUBDIR)/train_iris.py
 
 .PHONY: clean
 clean:
-	rm -rf IrisClassifier.sav iris_pb2.py __pycache__
+	rm -rf $(SUBDIR)/IrisClassifier.sav $(SUBDIR)/iris_pb2.py __pycache__
