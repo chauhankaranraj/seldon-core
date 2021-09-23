@@ -1,4 +1,4 @@
-from sklearn.externals import joblib
+import joblib
 from google.protobuf.any_pb2 import Any
 from iris_pb2 import IrisPredictRequest, IrisPredictResponse
 
