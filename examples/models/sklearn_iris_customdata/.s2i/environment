@@ -1,4 +1,4 @@
-MODEL_NAME=subdir:IrisClassifier
+MODEL_NAME=subdir.IrisClassifier
 API_TYPE=GRPC
 SERVICE_TYPE=MODEL
 PERSISTENCE=0
